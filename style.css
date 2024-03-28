@@ -45,7 +45,7 @@ section {
 }
 
 .nav-item .navbar-links {
-  color: white;
+  color: #fff;
 }
 
 #navbarSupportedContent a {
@@ -59,7 +59,7 @@ section {
 
 #navbarSupportedContent button {
   background: #29f700;
-  width: 5rem;
+  width: 6rem;
   border-radius: 15px;
 }
 
@@ -73,7 +73,7 @@ section {
 
 #home h1 {
   font-size: 100px;
-  color: white;
+  color: #fff;
   letter-spacing: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 0px 1px 0px #ccc, 0px 2px 0px #ccc, 0px 3px 0px #ccc,
@@ -82,7 +82,7 @@ section {
 
 #home p {
   font-size: 18px;
-  color: white;
+  color: #fff;
 }
 
 #home .input-group {
@@ -92,7 +92,7 @@ section {
 
 .g-button {
   background-color: green !important;
-  color: white !important;
+  color: #fff !important;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -104,6 +104,10 @@ section {
 #about h1 {
   font-weight: 800;
   font-size: 50px;
+}
+
+#about .img-fluid{
+    width: 120%;
 }
 
 #product {
@@ -123,13 +127,49 @@ section {
 }
 
 .card {
-  width: 350px;
-  height: 400px;
+  width: 300px;
+  height: 380px;
   border: none !important;
-  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px white;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 8px rgb(201, 200, 200);
   border-radius: 20px !important;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   margin: 20px 60px;
+  transition: .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 20px rgba(2, 255, 65, 0.411);
+}
+
+#contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url("https://images.healthshots.com/healthshots/en/uploads/2022/04/13095356/spices1-1600x900.jpg");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+#contact h1{
+    color: #fff;
+}
+
+#contact .container{
+    min-width: 30%;
+    width: auto;
+}
+
+#contact form{
+    text-align: center;
+}
+
+#contact form input{
+    margin-bottom: 12px;
+}
+
+#contact form textarea{
+    height: 10vh;
+    margin-bottom: 20px;
 }
